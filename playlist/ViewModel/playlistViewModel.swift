@@ -11,17 +11,11 @@ import Firebase
 
 class PlaylistViewModel: ObservableObject {
 
+    let firebaseService = FirebaseService()
     @Published var listOfSongs = [PlaylistModel.Song]()
     
     func getAllSongs() {
-        let db = Firestore.firestore();
-
-        db.collection("songs").addSnapshotListener { (querySnapshot, error) in
-            guard let documents = querySnapshot?.documents else {
-                print("No documents")
-                return
-            }
-
+        firebaseService.getAllSongs() { documents in
             self.listOfSongs = documents.map { (queryDocumentSnapshot) -> PlaylistModel.Song in
                 let data = queryDocumentSnapshot.data()
                 let title = data["title"] as? String ?? ""
