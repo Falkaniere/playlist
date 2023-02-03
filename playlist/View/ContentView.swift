@@ -30,6 +30,7 @@ struct ContentView: View {
                 self.viewModel.getAllSongs()
             }
         }
+        .padding(.top)
     }
 }
 
