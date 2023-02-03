@@ -13,7 +13,7 @@ struct ContentView: View {
     @ObservedObject var viewModel = PlaylistViewModel()
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack{
                 Header()
                 List{
@@ -24,9 +24,6 @@ struct ContentView: View {
                     })
                 }
             }
-            
-            .padding(.init(top: 40, leading: 0, bottom: 0, trailing: 0))
-            .ignoresSafeArea()
             .listStyle(PlainListStyle())
             .onAppear(){
                 self.viewModel.getAllSongs()
@@ -49,7 +46,6 @@ struct Header: View {
                     .padding(.trailing)
             }
         }
-        .padding(.init(top: 50, leading: 0, bottom: 0, trailing: 0))
     }
 }
 
