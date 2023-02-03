@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
-//                Header()
+                Header()
                 List{
                     ForEach(viewModel.listOfSongs, id: \.self, content: { song in
                         VStack{
