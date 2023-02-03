@@ -23,6 +23,7 @@ struct ContentView: View {
                         }
                     })
                 }
+                .navigationBarHidden(true)
             }
             .listStyle(PlainListStyle())
             .onAppear(){
