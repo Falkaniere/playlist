@@ -17,11 +17,11 @@ struct ContentView: View {
             VStack{
                 Header()
                 List{
-                    ForEach(viewModel.listOfSongs, id: \.self, content: { song in
+                    ForEach(viewModel.listOfSongs, id: \.id, content: { song in
                         VStack{
                             Text(song.title)
                         }
-                    })
+                    }).onDelete(perform: viewModel.deleteSongByID(at:))
                 }
                 .navigationBarHidden(true)
             }

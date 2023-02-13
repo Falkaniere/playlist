@@ -19,8 +19,17 @@ class PlaylistViewModel: ObservableObject {
             self.listOfSongs = documents.map { (queryDocumentSnapshot) -> PlaylistModel.Song in
                 let data = queryDocumentSnapshot.data()
                 let title = data["title"] as? String ?? ""
-                return PlaylistModel.Song(title: title, id: .init())
+                let id = data["id"] as? String ?? ""
+                return PlaylistModel.Song(title: title, id: id)
             }
+        }
+    }
+    
+    func deleteSongByID(at offsets: IndexSet) -> Void {
+        for index in offsets.makeIterator() {
+            let theItem = listOfSongs[index]
+            let deleteItem = firebaseService.deleteSongByID(id: theItem.id)
+            return deleteItem ? true : false
         }
     }
 }

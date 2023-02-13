@@ -12,10 +12,23 @@ class FirebaseService: ObservableObject {
     
     static let FirebaseShared = FirebaseService()
     
+    func deleteSongByID(id: String){
+        let db = Firestore.firestore()
+        db.collection("songs").whereField("id", isEqualTo: id).getDocuments(){ ( querySnapshot, err ) in
+            if let err = err {
+                return err
+            } else {
+                for document in querySnapshot!.documents {
+                    document.reference.delete()
+                    return true
+                }
+            }
+        }
+    }
     
     func createNewSong(nameSong: String) {
         let db = Firestore.firestore()
-        db.collection("songs").addDocument(data: ["title": nameSong]) { err in
+        db.collection("songs").addDocument(data: ["id": UUID().uuidString, "title": nameSong]) { err in
             if let err = err {
                 print( "Some error occured here: \(err)")
             } else {

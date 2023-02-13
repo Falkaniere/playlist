@@ -11,6 +11,6 @@ struct PlaylistModel {
 
     struct Song: Hashable {
         var title: String
-        var id: String = UUID().uuidString
+        var id: String
     }
 }
