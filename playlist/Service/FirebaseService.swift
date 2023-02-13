@@ -16,11 +16,10 @@ class FirebaseService: ObservableObject {
         let db = Firestore.firestore()
         db.collection("songs").whereField("id", isEqualTo: id).getDocuments(){ ( querySnapshot, err ) in
             if let err = err {
-                return err
+                print("SOME ERROR WITH ERROR \(err)")
             } else {
                 for document in querySnapshot!.documents {
                     document.reference.delete()
-                    return true
                 }
             }
         }

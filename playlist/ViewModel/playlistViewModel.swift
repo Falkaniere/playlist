@@ -28,8 +28,7 @@ class PlaylistViewModel: ObservableObject {
     func deleteSongByID(at offsets: IndexSet) -> Void {
         for index in offsets.makeIterator() {
             let theItem = listOfSongs[index]
-            let deleteItem = firebaseService.deleteSongByID(id: theItem.id)
-            return deleteItem ? true : false
+            firebaseService.deleteSongByID(id: theItem.id)
         }
     }
 }
