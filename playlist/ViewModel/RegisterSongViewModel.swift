@@ -17,8 +17,8 @@ class RegisterSongViewModel: ObservableObject {
             print("document inválid")
             return false
         } else {
-            firebase.createNewSong(nameSong: nameOfSong)
-            return true
+            let ref = firebase.createNewSong(nameSong: nameOfSong)
+            return ref
         }
     }
     

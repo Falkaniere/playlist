@@ -25,15 +25,21 @@ class FirebaseService: ObservableObject {
         }
     }
     
-    func createNewSong(nameSong: String) {
+    func createNewSong(nameSong: String) -> Bool {
+        var ref: DocumentReference? = nil
+        var isRecord: Bool = false
         let db = Firestore.firestore()
-        db.collection("songs").addDocument(data: ["id": UUID().uuidString, "title": nameSong]) { err in
+        ref = db.collection("songs").addDocument(data: ["id": UUID().uuidString, "title": nameSong]) { err in
             if let err = err {
-                print( "Some error occured here: \(err)")
+                print("Some error occured here: \(err)")
+                isRecord = false
             } else {
-                print("Document successfully written!")
+                print("Document added with ID: \(ref!.documentID)")
+                isRecord = true
             }
         }
+        
+        return isRecord
     }
     
     func getAllSongs(completion: @escaping( [QueryDocumentSnapshot]) -> Void) {

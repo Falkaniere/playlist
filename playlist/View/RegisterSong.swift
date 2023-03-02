@@ -28,15 +28,18 @@ struct RegisterSong: View {
             Spacer()
             HStack {
                 Button(action: {
-                    let result = registerSongViewModel.registerNewSong(nameOfSong: nameOfSong)
-                    if result == true {
-                        isPresentingSuccessAlert = true
-                    } else {
-                        isPresentingErrorAlert = true
+                    Task {
+                        let result = registerSongViewModel.registerNewSong(nameOfSong: nameOfSong)
+                        if result == true {
+                            isPresentingSuccessAlert = true
+                        } else {
+                            isPresentingErrorAlert = true
+                        }
                     }
                 }) {
                     Text("Enviar")
                 }
+                .disabled(nameOfSong.isEmpty)
             }
             .padding()
         }
