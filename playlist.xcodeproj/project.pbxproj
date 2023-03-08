@@ -17,6 +17,7 @@
 		654887B5297F3EEF00B8D157 /* playlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654887B4297F3EEF00B8D157 /* playlistUITestsLaunchTests.swift */; };
 		654887C2298063D100B8D157 /* playlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654887C1298063D100B8D157 /* playlistModel.swift */; };
 		654887C42980643800B8D157 /* playlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654887C32980643800B8D157 /* playlistViewModel.swift */; };
+		65A170FD29B27A5D00643AAB /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A170FC29B27A5D00643AAB /* SongView.swift */; };
 		65B6117D298846D800342EF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B6117C298846D800342EF1 /* GoogleService-Info.plist */; };
 		65B6118029884AA900342EF1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 65B6117F29884AA900342EF1 /* FirebaseDatabase */; };
 		65B6118229884AA900342EF1 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65B6118129884AA900342EF1 /* FirebaseDatabaseSwift */; };
@@ -58,6 +59,7 @@
 		654887B4297F3EEF00B8D157 /* playlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		654887C1298063D100B8D157 /* playlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistModel.swift; sourceTree = "<group>"; };
 		654887C32980643800B8D157 /* playlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistViewModel.swift; sourceTree = "<group>"; };
+		65A170FC29B27A5D00643AAB /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		65B6117C298846D800342EF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65D4E736298D748D00A6F31C /* RegisterSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSongViewModel.swift; sourceTree = "<group>"; };
 		65D4E739298D757F00A6F31C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				65488799297F3EEF00B8D157 /* ContentView.swift */,
 				650378D1298ADA6E0065B3CD /* RegisterSong.swift */,
+				65A170FC29B27A5D00643AAB /* SongView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				65D4E737298D748D00A6F31C /* RegisterSongViewModel.swift in Sources */,
 				654887C42980643800B8D157 /* playlistViewModel.swift in Sources */,
 				654887C2298063D100B8D157 /* playlistModel.swift in Sources */,
+				65A170FD29B27A5D00643AAB /* SongView.swift in Sources */,
 				650378D2298ADA6E0065B3CD /* RegisterSong.swift in Sources */,
 				65D4E73A298D757F00A6F31C /* FirebaseService.swift in Sources */,
 				6548879A297F3EEF00B8D157 /* ContentView.swift in Sources */,

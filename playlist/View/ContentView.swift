@@ -18,19 +18,21 @@ struct ContentView: View {
                 List{
                     ForEach(listWithSearch, id: \.id, content: { song in
                         VStack{
-                            Text(song.title)
+                            NavigationLink(destination: SongView(song: song)){
+                                Text(song.title)
+                            }
                         }
                     }).onDelete(perform: viewModel.deleteSongByID(at:))
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
+                ToolbarItem(placement: .navigationBarLeading) {
                     Text("Músicas")
                         .font(.largeTitle.bold())
                         .accessibilityAddTraits(.isHeader)
                         .padding(.bottom)
                 }
-                ToolbarItem(placement: .automatic){
+                ToolbarItem(placement: .navigationBarTrailing){
                     NavigationLink(destination: RegisterSong()){
                         Image(systemName: "plus.circle")
                             .font(.system(size: 22, weight: .light))
