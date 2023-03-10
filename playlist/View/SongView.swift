@@ -34,6 +34,6 @@ struct SongView: View {
 struct SongView_Previews: PreviewProvider {
     static var previews: some View {
         
-        SongView(song: PlaylistModel.Song(title: "TESTAMENTO", id: "123"))
+        SongView(song: PlaylistModel.Song(title: "Teste", id: "123"))
     }
 }
