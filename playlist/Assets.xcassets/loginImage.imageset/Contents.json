@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Design sem nome.png",
+      "filename" : "todo-list-icon-notepad-with-completed-todo-list-3d-render-png 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "todo-list-icon-notepad-with-completed-todo-list-3d-render-png 2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "todo-list-icon-notepad-with-completed-todo-list-3d-render-png 3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

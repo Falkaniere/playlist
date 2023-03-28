@@ -21,7 +21,7 @@ struct playlistApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: playListViewModel)
+            ContentView()
                 .environmentObject(firestoreManager)
         }
     }

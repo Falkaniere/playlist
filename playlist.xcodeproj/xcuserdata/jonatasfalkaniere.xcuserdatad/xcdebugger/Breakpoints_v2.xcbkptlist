@@ -94,10 +94,42 @@
             filePath = "playlist/Service/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "createNewSong(nameSong:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63F65BE4-B540-4D12-947C-221C7722A819 - a904cff4781a1a00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.FirebaseService.createNewSong(nameSong: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/Service/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "63F65BE4-B540-4D12-947C-221C7722A819 - 648b69c97e851b76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in playlist.FirebaseService.createNewSong(nameSong: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/Service/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -110,8 +142,8 @@
             filePath = "playlist/Service/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "createNewSong(nameSong:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +158,8 @@
             filePath = "playlist/Service/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "createNewSong(nameSong:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +174,8 @@
             filePath = "playlist/Service/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "createNewSong(nameSong:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +190,8 @@
             filePath = "playlist/Service/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "createNewSong(nameSong:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -183,47 +215,95 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "448BFD25-01D0-41C3-9DF9-58B1F5AE0447"
+            uuid = "1B8E576D-1054-48AC-91B2-73B47897BAD8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "playlist/View/ContentView.swift"
+            filePath = "playlist/Service/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "deleteSongByID(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7747F02A-85C5-4A0B-A911-4FFA32724752"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "login(email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D59396F1-4BA7-4620-BFE6-0C06934CE651"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "LoginViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1375F101-A2DB-4744-9F3B-B91EE0AEEBEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LoginViewModel"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "448BFD25-01D0-41C3-9DF9-58B1F5AE0447 - 94d4827da89afd3e"
+                  uuid = "1375F101-A2DB-4744-9F3B-B91EE0AEEBEC - 69aef026d1fccdba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, playlist.SongView&gt; in closure #1 (playlist.PlaylistModel.Song) -&gt; SwiftUI.VStack&lt;SwiftUI.NavigationLink&lt;SwiftUI.Text, playlist.SongView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.DynamicViewContent.onDelete(perform: Swift.Optional&lt;(Foundation.IndexSet) -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of SwiftUI.DynamicViewContent.onDelete(perform: Swift.Optional&lt;(Foundation.IndexSet) -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in playlist.ContentView.body.getter : some"
+                  symbolName = "playlist.LoginViewModel.login(email: Swift.String, password: Swift.String) -&gt; ()"
                   moduleName = "playlist"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/ContentView.swift"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/LoginViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "252">
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
-                  uuid = "448BFD25-01D0-41C3-9DF9-58B1F5AE0447 - fe7a8a01e6f75b75"
+                  uuid = "1375F101-A2DB-4744-9F3B-B91EE0AEEBEC - 6cb7ea0303b6c592"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, playlist.SongView&gt; in closure #1 (playlist.PlaylistModel.Song) -&gt; SwiftUI.VStack&lt;SwiftUI.NavigationLink&lt;SwiftUI.Text, playlist.SongView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.DynamicViewContent.onDelete(perform: Swift.Optional&lt;(Foundation.IndexSet) -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of SwiftUI.DynamicViewContent.onDelete(perform: Swift.Optional&lt;(Foundation.IndexSet) -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in playlist.ContentView.body.getter : some"
+                  symbolName = "closure #1 (__C.FIRUser) -&gt; () in playlist.LoginViewModel.login(email: Swift.String, password: Swift.String) -&gt; ()"
                   moduleName = "playlist"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/ContentView.swift"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/LoginViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "108">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "156">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -231,17 +311,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CB24ED35-C3B1-47FA-8A58-B6068449C5C7"
-            shouldBeEnabled = "No"
+            uuid = "2DCC1F65-8F10-48D0-9702-C0E663222B27"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "playlist/View/ContentView.swift"
+            filePath = "playlist/ViewModel/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "LoginViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55049D3A-5B93-430B-8D64-F9FD519610F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "LoginViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2AD8789-0AA6-4CD5-8F4E-5D8548995AA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/AppManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "isAuthenticated()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

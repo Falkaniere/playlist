@@ -7,6 +7,7 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 
 class FirebaseService: ObservableObject {
     
@@ -51,6 +52,17 @@ class FirebaseService: ObservableObject {
                 print("No documents")
                 return
             }
+        }
+    }
+    
+    func authentication(email: String, password: String, completion: @escaping (User ) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            guard let result = result, error == nil else {
+              //handle error
+              return
+            }
+            let user = result.user
+            completion(user)
         }
     }
 }

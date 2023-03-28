@@ -16,6 +16,7 @@ struct SongView: View {
                 Form {
                     Section(header: Text("Nome da musica")) {
                         TextField("Título", text: $song.title )
+                            .disabled(true)
                     }
                 }
             }
