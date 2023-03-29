@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isAuthenticated = AppManager.isAuthenticated()
+        @State var isAuthenticated = AppManager.isAuthenticated()
     
     var body: some View {
         Group {

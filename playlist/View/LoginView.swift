@@ -71,38 +71,6 @@ struct LoginView: View {
                 }
               
             }
-            VStack{
-                Text("or")
-                HStack{
-                    Button{
-                        print("login with google")
-                    } label: {
-                        Image(systemName: "g.square.fill")
-                            .font(.system(size: 35))
-                            .foregroundColor(.white)
-                        Text("Login with Google")
-                            .bold()
-                            .foregroundColor(.white)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 40)
-                    .background(CustomColor.googleColor)
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                    
-//                    Button{
-//                        print("login with APPLE")
-//                    } label: {                        Image(systemName: "apple.logo")
-//                            .font(.system(size: 40))
-//                            .foregroundColor(.white)
-//                    }
-//                    .frame(width: 100, height: 50)
-//                    .background(CustomColor.appleColor)
-//                    .cornerRadius(10)
-//                    .padding()
-                }
-            }
-            
             Spacer()
         }
     }

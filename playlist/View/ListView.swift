@@ -41,7 +41,7 @@ struct ListView: View {
                         .padding(.bottom)
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
-                    NavigationLink(destination: LoginView()){
+                    NavigationLink(destination: RegisterSong()){
                         Image(systemName: "plus.circle")
                             .font(.system(size: 22, weight: .light))
                             .padding(.bottom)
@@ -70,9 +70,7 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        let playListViewModel = PlaylistViewModel()
         
         ContentView()
-            .environmentObject(PlaylistViewModel())
     }
 }
