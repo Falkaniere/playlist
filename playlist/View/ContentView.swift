@@ -9,14 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
         @State var isAuthenticated = AppManager.isAuthenticated()
+    @State var isActive: Bool = false
     
     var body: some View {
-        Group {
-            isAuthenticated ? AnyView(ListView()) : AnyView(LoginView())
+        ZStack{
+            if self.isActive{
+                Group {
+                    isAuthenticated ? AnyView(ListView()) : AnyView(LoginView())
+                }
+                .onReceive(AppManager.Authenticated, perform: {
+                    isAuthenticated = $0
+                })
+            } else {
+                SplashScreenView()
+            }
+        }.onAppear{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                withAnimation {
+                    self.isActive = true
+                }
+            }
         }
-        .onReceive(AppManager.Authenticated, perform: {
-            isAuthenticated = $0
-        })
+        
     }
 }
 

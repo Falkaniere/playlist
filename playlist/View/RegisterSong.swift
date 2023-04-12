@@ -50,8 +50,7 @@ struct RegisterSong: View {
                 isPresentingSuccessAlert = false
             }
         }
-        .alert("Algo de errado não está certo 🤔, tenta de novo daqui a pouco!", isPresented: $isPresentingErrorAlert) {
-            Button("Voltar"){
+        .alert("Algo de errado não está certo 🤔, tenta de novo daqui a pouco!", isPresented: $isPresentingErrorAlert) {            Button("Voltar"){
                 isPresentingErrorAlert = false
             }
         }
