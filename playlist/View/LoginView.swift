@@ -1,9 +1,3 @@
-//
-//  Login.swift
-//  playlist
-//
-//  Created by Jonatas Falkaniere on 11/03/23.
-//
 
 import SwiftUI
 
@@ -14,71 +8,66 @@ struct CustomColor {
 }
 
 struct LoginView: View {
-    
-    @ObservedObject var loginViewModel = LoginViewModel()
-    @State private var isSecured: Bool = true
-    @State var userEmail: String = ""
-    @State var userPassword: String = ""
-    
+    @ObservedObject var viewModel = LoginViewModel()
+    @State private var isSecurePassword = true
+    @State private var email = ""
+    @State private var password = ""
+
     var body: some View {
         NavigationView {
-            VStack(alignment: .center) {
+            VStack {
                 Spacer()
+
                 Image("Image")
-                
-                VStack(alignment: .leading){
-                    Group {
-                        TextField("Email", text: $userEmail)
+
+                VStack(alignment: .leading) {
+                    TextField("Email", text: $email)
+                        .textInputAutocapitalization(.never)
+                        .keyboardType(.emailAddress)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 16)
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 2))
+                        .padding(.horizontal, 16)
+
+                    if isSecurePassword {
+                        SecureField("Password", text: $password)
                             .textInputAutocapitalization(.never)
-                            .keyboardType(.emailAddress)
-                            .padding(10)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.black, lineWidth: 2)
-                            }
-                            .padding(10)
-                        if isSecured {
-                            SecureField("Password", text: $userPassword)
-                                .textInputAutocapitalization(.never)
-                                .padding(10)
-                                .overlay {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(.black, lineWidth: 2)
-                                }
-                                .padding(10)
-                        } else {
-                            TextField("Password", text: $userPassword)
-                                .textInputAutocapitalization(.never)
-                                .padding(10)
-                                .overlay {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(.black, lineWidth: 2)
-                                }
-                                .padding(10)
-                            
-                        }
-                        Button {
-                            loginViewModel.login(email: userEmail, password: userPassword)
-                        } label: {
-                            Text("Entrar")
-                                .bold()
-                                .foregroundColor(.black)
-                        }
-                        .frame(height: 50)
-                        .frame(maxWidth: .infinity)
-                        .background(CustomColor.colorSystem)
-                        .cornerRadius(20)
-                        .padding()
-                     
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 16)
+                            .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 2))
+                            .padding(.horizontal, 16)
+                    } else {
+                        TextField("Password", text: $password)
+                            .textInputAutocapitalization(.never)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 16)
+                            .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 2))
+                            .padding(.horizontal, 16)
                     }
-                    
+
+                    Button(action: {
+                        viewModel.login(email: email, password: password)
+                    }) {
+                        Text("Entrar")
+                            .bold()
+                            .foregroundColor(.black)
+                    }
+                    .frame(height: 50)
+                    .frame(maxWidth: .infinity)
+                    .background(CustomColor.colorSystem)
+                    .cornerRadius(20)
+                    .padding()
+
                     NavigationLink(destination: RegisterView()) {
                         Text("Novo por aqui? Cadastre-se")
                             .frame(maxWidth: .infinity, alignment: .center)
                     }
                 }
+
                 Spacer()
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

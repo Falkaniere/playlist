@@ -10,15 +10,15 @@ import Firebase
 
 @main
 struct playlistApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
     
     let playListViewModel = PlaylistViewModel()
     
     @StateObject var firestoreManager = PlaylistViewModel()
     
-    init(){
-        FirebaseApp.configure()
-    }
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()

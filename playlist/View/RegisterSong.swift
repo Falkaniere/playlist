@@ -29,11 +29,12 @@ struct RegisterSong: View {
             HStack {
                 Button(action: {
                     Task {
-                        let result = registerSongViewModel.registerNewSong(nameOfSong: nameOfSong)
-                        if result == true {
-                            isPresentingSuccessAlert = true
-                        } else {
-                            isPresentingErrorAlert = true
+                        registerSongViewModel.registerNewSong(nameOfSong: nameOfSong) { result in
+                            if let success = result, success == true {
+                                isPresentingSuccessAlert = true
+                            } else {
+                                isPresentingErrorAlert = true
+                            }
                         }
                     }
                 }) {

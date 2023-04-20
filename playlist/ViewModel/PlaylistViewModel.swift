@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 class PlaylistViewModel: ObservableObject {
 
@@ -15,12 +14,17 @@ class PlaylistViewModel: ObservableObject {
     @Published var listOfSongs = [PlaylistModel.Song]()
     
     func getAllSongs() {
-        firebaseService.getAllSongs() { documents in
-            self.listOfSongs = documents.map { (queryDocumentSnapshot) -> PlaylistModel.Song in
-                let data = queryDocumentSnapshot.data()
-                let title = data["title"] as? String ?? ""
-                let id = data["id"] as? String ?? ""
-                return PlaylistModel.Song(title: title, id: id)
+        firebaseService.getAllSongs() { result in
+            switch result {
+            case .success(let documents):
+                self.listOfSongs = documents.compactMap { (queryDocumentSnapshot) -> PlaylistModel.Song? in
+                    let data = queryDocumentSnapshot.data()
+                    let title = data["title"] as? String ?? ""
+                    let id = data["id"] as? String ?? ""
+                    return PlaylistModel.Song(title: title, id: id)
+                }
+            case .failure(let error):
+                print("Error getting documents: \(error)")
             }
         }
     }

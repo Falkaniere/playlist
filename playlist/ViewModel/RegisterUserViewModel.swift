@@ -1,40 +1,34 @@
-//
-//  RegisterViewModel.swift
-//  playlist
-//
-//  Created by Jonatas Falkaniere on 18/04/23.
-//
-
 import Foundation
-import FirebaseAuth
-import Firestore
+import Firebase
 
 class RegisterUserViewModel: ObservableObject {
-    let firebaseService = FirebaseService()
-
+    @Published var isValid: Bool = false
+    @Published var showError: Bool = false
+    @Published var errorMessage: String = ""
     
-    func registerUser(name: String, email: String, church: String, password: String, completion: @escaping (Result<AuthDataResult, Error>) -> Void) {
-        let db = Firestore.firestore()
+    private let firebaseService = FirebaseService()
+    
+    func register(name: String, email: String, church: String, password: String, onSuccess: @escaping (User) -> Void, onFailure: @escaping (Error) -> Void) {
+        if !name.isEmpty && !email.isEmpty && !password.isEmpty {
+            isValid = true
+        } else {
+            isValid = false
+            showError = true
+            errorMessage = "Please enter all fields"
+            return
+        }
         
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                 if let error = error {
-                     print("Error creating user: \(error.localizedDescription)")
-                 } else if let user = authResult?.user {
-                     print("User registered successfully with uid: \(user.uid)")
-                     let userData = [
-                         "name": name,
-                         "church": church
-                     ]
-                     
-                     db.collection("users").document(user.uid).setData(userData) { error in
-                         if let error = error {
-                             print("Error saving user data: \(error.localizedDescription)")
-                         } else {
-                             print("User data saved successfully")
-                             self.isRegistrationSuccessful = true
-                         }
-                     }
-                 }
-             }
+        firebaseService.registerUser(name: name, email: email, church: church, password: password) { [weak self] result in
+            switch result {
+            case .success(let user):
+                // User data was saved successfully
+                print("User data saved successfully")
+                onSuccess(user)
+            case .failure(let error):
+                self?.showError = true
+                self?.errorMessage = error.localizedDescription
+                onFailure(error)
+            }
+        }
     }
 }
