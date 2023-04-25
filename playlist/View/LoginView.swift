@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var isSecurePassword = true
     @State private var email = ""
     @State private var password = ""
+    @State private var isLoginSuccessful = true
 
     var body: some View {
         NavigationView {
@@ -46,7 +47,9 @@ struct LoginView: View {
                     }
 
                     Button(action: {
-                        viewModel.login(email: email, password: password)
+                        viewModel.login(email: email, password: password) { success in
+                            isLoginSuccessful = success
+                        }
                     }) {
                         Text("Entrar")
                             .bold()
@@ -69,6 +72,10 @@ struct LoginView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
         }
+        .alert(isPresented: Binding<Bool>(get: { isLoginSuccessful == false }, set: { _ in })) {
+            Alert(title: Text("Erro!"), message: Text("Email ou senha inválido(s)"))
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

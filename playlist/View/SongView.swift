@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct SongView: View {
-    @State var song: PlaylistModel.Song
+    let song: PlaylistModel.Song
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Form {
-                    Section(header: Text("Nome da musica")) {
-                        TextField("Título", text: $song.title )
-                            .disabled(true)
-                    }
+        VStack {
+            Form {
+                Section(header: Text("Nome da música")) {
+                    TextField("Title", text: .constant(song.title))
+                        .disabled(true)
                 }
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Detalhes")
-                        .font(.largeTitle.bold())
-                        .accessibilityAddTraits(.isHeader)
-                        .padding(.leading)
-                }
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Text("Detalhes")
+                    .font(.largeTitle.bold())
+                    .accessibilityAddTraits(.isHeader)
+                    .padding(.leading)
             }
         }
     }
@@ -34,7 +32,6 @@ struct SongView: View {
 
 struct SongView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        SongView(song: PlaylistModel.Song(title: "Teste", id: "123"))
+        SongView(song: PlaylistModel.Song(title: "Test", id: "123"))
     }
 }

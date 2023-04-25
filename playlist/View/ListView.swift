@@ -6,71 +6,59 @@
 //
 
 import SwiftUI
-
 struct ListView: View {
-    @ObservedObject var loginViewModel = LoginViewModel()
-    @EnvironmentObject var firestoreManager: PlaylistViewModel
-    @ObservedObject var viewModel = PlaylistViewModel()
+    @EnvironmentObject var playlistViewModel: PlaylistViewModel
+    @StateObject var loginViewModel = LoginViewModel()
     @State private var textToSearch = ""
-    
+
     var body: some View {
         NavigationView {
             VStack{
                 List{
-                    ForEach(listWithSearch, id: \.id, content: { song in
-                        VStack{
-                            NavigationLink(destination: SongView(song: song)){
-                                Text(song.title)
-                            }
+                    ForEach(listWithSearch, id: \.id) { song in
+                        NavigationLink(destination: SongView(song: song)){
+                            Text(song.title)
                         }
-                    }).onDelete(perform: viewModel.deleteSongByID(at:))
-                }
-                Button{
-                    loginViewModel.signOut()
-                } label: {
-                    Text("SAIR")
-                        .bold()
-                        .foregroundColor(.blue)
+                    }
+                    .onDelete(perform: playlistViewModel.deleteSongByID(at:))
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Músicas")
-                        .font(.largeTitle.bold())
-                        .accessibilityAddTraits(.isHeader)
-                        .padding(.bottom)
+                ToolbarItem(placement: .navigationBarLeading){
+                    NavigationLink(destination: RegisterSong()){
+                        Text("Adicionar")
+                    }
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
-                    NavigationLink(destination: RegisterSong()){
-                        Image(systemName: "plus.circle")
-                            .font(.system(size: 22, weight: .light))
-                            .padding(.bottom)
+                    Button{
+                        loginViewModel.signOut()
+                    } label: {
+                        Text("Sair")
                     }
                 }
             }
             .listStyle(PlainListStyle())
-            .searchable(text: $textToSearch,
-                        placement: .navigationBarDrawer(displayMode: .always))
-            .onAppear(){
-                self.viewModel.getAllSongs()
+            .searchable(text: $textToSearch, placement: .navigationBarDrawer(displayMode: .always))
+            .onAppear {
+                playlistViewModel.getAllSongs()
             }
+            .navigationTitle("Músicas")
+            .navigationBarTitleDisplayMode(.large)
+            .listStyle(InsetGroupedListStyle())
         }
     }
     
-    
     var listWithSearch: [PlaylistModel.Song] {
         if textToSearch.isEmpty {
-            return viewModel.listOfSongs
+            return playlistViewModel.listOfSongs
         } else {
-            return viewModel.listOfSongs.filter{($0.title).contains(textToSearch)}
+            return playlistViewModel.listOfSongs.filter { $0.title.contains(textToSearch) }
         }
     }
 }
 
-
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        ContentView()
+        ListView().environmentObject(PlaylistViewModel())
     }
 }
