@@ -17,14 +17,11 @@ struct SongView: View {
                     TextField("Title", text: .constant(song.title))
                         .disabled(true)
                 }
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Text("Detalhes")
-                    .font(.largeTitle.bold())
-                    .accessibilityAddTraits(.isHeader)
-                    .padding(.leading)
+                Section(header: Text("Levada (Ritimo Lenta/Rápida)")) {
+                    TextField("Levada", text: .constant(song.rhythm))
+                        .autocapitalization(.words)
+                        .disabled(true)
+                }
             }
         }
     }
@@ -32,6 +29,6 @@ struct SongView: View {
 
 struct SongView_Previews: PreviewProvider {
     static var previews: some View {
-        SongView(song: PlaylistModel.Song(title: "Test", id: "123"))
+        SongView(song: PlaylistModel.Song(id: "123", title: "Música", rhythm: "Lenta" ))
     }
 }

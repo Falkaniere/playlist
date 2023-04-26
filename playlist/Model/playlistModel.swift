@@ -10,7 +10,8 @@ import Foundation
 struct PlaylistModel {
 
     struct Song: Hashable {
-        var title: String
         var id: String
+        var title: String
+        var rhythm: String
     }
 }

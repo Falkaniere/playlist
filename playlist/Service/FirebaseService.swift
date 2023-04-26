@@ -19,9 +19,9 @@ final class FirebaseService {
         }
     }
     
-    func createNewSong(nameSong: String, completion: @escaping (Result<Void, Error>) -> Void) {
+    func createNewSong(nameSong: String, rhythm: String, completion: @escaping (Result<Void, Error>) -> Void) {
         let db = Firestore.firestore()
-        let songData: [String: Any] = ["id": UUID().uuidString, "title": nameSong]
+        let songData: [String: Any] = ["id": UUID().uuidString, "title": nameSong, "rhythm": rhythm]
         db.collection("songs").addDocument(data: songData) { error in
             if let error = error {
                 completion(.failure(error))

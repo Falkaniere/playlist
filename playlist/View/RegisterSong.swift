@@ -11,6 +11,7 @@ struct RegisterSong: View {
     @ObservedObject var registerSongViewModel = RegisterSongViewModel()
     
     @State var nameOfSong: String = ""
+    @State var rhythm: String = ""
     @State private var isPresentingSuccessAlert: Bool = false
     @State private var isPresentingErrorAlert: Bool = false
 
@@ -24,12 +25,15 @@ struct RegisterSong: View {
                 Section(header: Text("Nova música")) {
                     TextField("Titulo", text: $nameOfSong)
                 }
+                Section(header: Text("Ritimo (lenta/rápida)")) {
+                    TextField("Ritimo", text: $rhythm)
+                }
             }
             Spacer()
             HStack {
                 Button(action: {
                     Task {
-                        registerSongViewModel.registerNewSong(nameOfSong: nameOfSong) { result in
+                        registerSongViewModel.registerNewSong(nameOfSong: nameOfSong, rhythm: rhythm) { result in
                             if let success = result, success == true {
                                 isPresentingSuccessAlert = true
                             } else {
@@ -48,6 +52,7 @@ struct RegisterSong: View {
         .alert("Música nova adicionada!", isPresented: $isPresentingSuccessAlert){
             Button("OK"){
                 nameOfSong = ""
+                rhythm = ""
                 isPresentingSuccessAlert = false
             }
         }

@@ -19,9 +19,10 @@ class PlaylistViewModel: ObservableObject {
             case .success(let documents):
                 self.listOfSongs = documents.compactMap { (queryDocumentSnapshot) -> PlaylistModel.Song? in
                     let data = queryDocumentSnapshot.data()
-                    let title = data["title"] as? String ?? ""
                     let id = data["id"] as? String ?? ""
-                    return PlaylistModel.Song(title: title, id: id)
+                    let title = data["title"] as? String ?? ""
+                    let rhythm = data["rhythm"] as? String ?? ""
+                    return PlaylistModel.Song(id: id, title: title, rhythm: rhythm)
                 }
             case .failure(let error):
                 print("Error getting documents: \(error)")
