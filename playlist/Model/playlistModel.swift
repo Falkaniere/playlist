@@ -13,5 +13,6 @@ struct PlaylistModel {
         var id: String
         var title: String
         var rhythm: String
+        var letterSong: String
     }
 }

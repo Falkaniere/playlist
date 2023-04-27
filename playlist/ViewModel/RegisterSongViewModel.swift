@@ -13,12 +13,12 @@ class RegisterSongViewModel: ObservableObject {
     
     let firebase = FirebaseService()
     
-    func registerNewSong(nameOfSong: String, rhythm: String, completion: @escaping (Bool?) -> Void) {
+    func registerNewSong(nameOfSong: String, rhythm: String, letterSong: String, completion: @escaping (Bool?) -> Void) {
         if nameOfSong.isEmpty {
             print("document inválido")
             completion(nil)
         } else {
-            firebase.createNewSong(nameSong: nameOfSong, rhythm: rhythm) { result in
+            firebase.createNewSong(nameSong: nameOfSong, rhythm: rhythm, letterSong: letterSong) { result in
                 switch result {
                 case .success(_):
                     completion(true)

@@ -11,10 +11,13 @@ struct RegisterSong: View {
     @ObservedObject var registerSongViewModel = RegisterSongViewModel()
     
     @State var nameOfSong: String = ""
-    @State var rhythm: String = ""
+    @State var letterSong: String = ""
+    @State var keyWord: String = ""
     @State private var isPresentingSuccessAlert: Bool = false
     @State private var isPresentingErrorAlert: Bool = false
-
+    @State private var selectedStrength = "Lento"
+    let strengths = ["Lento", "Rápido"]
+    
     var body: some View {
         VStack{
             HStack{
@@ -25,15 +28,31 @@ struct RegisterSong: View {
                 Section(header: Text("Nova música")) {
                     TextField("Titulo", text: $nameOfSong)
                 }
-                Section(header: Text("Ritimo (lenta/rápida)")) {
-                    TextField("Ritimo", text: $rhythm)
+                Picker("Ritmo", selection: $selectedStrength) {
+                    ForEach(strengths, id: \.self) {
+                        Text($0)
+                    }
                 }
+                Section(header: Text("Letra da música")) {
+                    if #available(iOS 16.0, *) {
+                        TextField("Title", text: $letterSong,  axis: .vertical)
+                            .textInputAutocapitalization(.never)
+                    } else {
+                        ZStack{
+                            TextField("Title", text: $letterSong)
+                                .textInputAutocapitalization(.never)
+                        }
+                    }
+                }
+//                Section(header: Text("Palavras chave")) {
+//                    TextField("Santa Ceia, Dízimo...", text: $keyWord)
+//                }
             }
             Spacer()
             HStack {
                 Button(action: {
                     Task {
-                        registerSongViewModel.registerNewSong(nameOfSong: nameOfSong, rhythm: rhythm) { result in
+                        registerSongViewModel.registerNewSong(nameOfSong: nameOfSong, rhythm: selectedStrength, letterSong: letterSong) { result in
                             if let success = result, success == true {
                                 isPresentingSuccessAlert = true
                             } else {
@@ -52,7 +71,9 @@ struct RegisterSong: View {
         .alert("Música nova adicionada!", isPresented: $isPresentingSuccessAlert){
             Button("OK"){
                 nameOfSong = ""
-                rhythm = ""
+                keyWord = ""
+                selectedStrength = "Lento"
+                letterSong = ""
                 isPresentingSuccessAlert = false
             }
         }

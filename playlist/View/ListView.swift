@@ -25,15 +25,15 @@ struct ListView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
-                    NavigationLink(destination: RegisterSong()){
-                        Text("Adicionar")
-                    }
-                }
-                ToolbarItem(placement: .navigationBarTrailing){
                     Button{
                         loginViewModel.signOut()
                     } label: {
                         Text("Sair")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    NavigationLink(destination: RegisterSong()){
+                        Image(systemName: "plus")
                     }
                 }
             }

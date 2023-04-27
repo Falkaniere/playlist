@@ -22,7 +22,8 @@ class PlaylistViewModel: ObservableObject {
                     let id = data["id"] as? String ?? ""
                     let title = data["title"] as? String ?? ""
                     let rhythm = data["rhythm"] as? String ?? ""
-                    return PlaylistModel.Song(id: id, title: title, rhythm: rhythm)
+                    let letterSong = data["letterSong"] as? String ?? ""
+                    return PlaylistModel.Song(id: id, title: title, rhythm: rhythm, letterSong: letterSong)
                 }
             case .failure(let error):
                 print("Error getting documents: \(error)")

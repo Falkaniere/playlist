@@ -16,33 +16,28 @@ struct RegisterView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Spacer()
+                
                 Text("Preencha o formulário abaixo")
                 
-                TextField("Nome", text: $userName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .keyboardType(.default)
+//                Spacer()
                 
-                TextField("Email", text: $userEmail)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
-                
-                TextField("Igreja", text: $userChurch)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                SecureField("Senha", text: $userPassword)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                SecureField("Confirme a senha", text: $confirmUserPassword)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                Spacer()
+                Form {
+                    Section(header: Text("Nome")) {
+                        TextField("Nome", text: $userName)
+                    }
+                    Section(header: Text("Email")) {
+                        TextField("Email", text: $userEmail)
+                    }
+                    Section(header: Text("Igreja")) {
+                        TextField("Igreja", text: $userChurch)
+                    }
+                    Section(header: Text("Senha")) {
+                        TextField("Senha", text: $userPassword)
+                    }
+                    Section(header: Text("Confirme a senha")) {
+                        TextField("Confirme a senha", text: $confirmUserPassword)
+                    }
+                }
                 
                 Button("Cadastrar") {
                     if(userPassword == confirmUserPassword) {
@@ -59,11 +54,10 @@ struct RegisterView: View {
                     }
                 }
                 .padding()
-                .buttonStyle(FilledButtonStyle(disabled: userName.isEmpty || userEmail.isEmpty || userChurch.isEmpty || userPassword.isEmpty || confirmUserPassword.isEmpty))
-                
-                Spacer()
+                .disabled(userName.isEmpty || userEmail.isEmpty || userChurch.isEmpty || userPassword.isEmpty || confirmUserPassword.isEmpty)
             }
             .navigationTitle("Cadastro")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .alert("Senhas diferentes!", isPresented: $passwordNotMatches){
             Button("OK"){
@@ -86,21 +80,5 @@ struct RegisterView: View {
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
-    }
-}
-
-struct FilledButtonStyle: ButtonStyle {
-    var disabled: Bool
-
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundColor(Color.white)
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(disabled ? Color.gray : CustomColor.colorSystem)
-            .cornerRadius(20)
-            .opacity(disabled ? 0.5 : 1.0)
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-            .animation(.easeInOut(duration: 0.1))
     }
 }
