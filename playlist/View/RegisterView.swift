@@ -19,8 +19,6 @@ struct RegisterView: View {
                 
                 Text("Preencha o formulário abaixo")
                 
-//                Spacer()
-                
                 Form {
                     Section(header: Text("Nome")) {
                         TextField("Nome", text: $userName)

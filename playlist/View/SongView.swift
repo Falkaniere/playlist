@@ -8,32 +8,73 @@
 import SwiftUI
 
 struct SongView: View {
-    let song: PlaylistModel.Song
+    let songDetailViewModel = SongDetailViewModel()
+    
+    @State var songData: PlaylistModel.Song
+    @State var isDisabledFields = true
+    @State var isPresentingSuccessAlert = false
+    @State var isSaved = false
+    
+    var song: PlaylistModel.Song {
+        songData
+    }
     
     var body: some View {
         VStack {
             Form {
                 Section(header: Text("Nome da música")) {
-                    TextField("Title", text: .constant(song.title))
-                        .disabled(true)
+                    TextField("Title", text: $songData.title)
+                        .disabled(isDisabledFields)
                 }
                 Section(header: Text("Levada (Ritimo Lenta/Rápida)")) {
-                    TextField("Levada", text: .constant(song.rhythm))
+                    TextField("Levada", text: $songData.rhythm)
                         .autocapitalization(.words)
-                        .disabled(true)
+                        .disabled(isDisabledFields)
                 }
                 Section(header: Text("Letra")) {
                     if #available(iOS 16.0, *) {
-                        TextField("Letra", text: .constant(song.letterSong), axis: .vertical)
-                            .disabled(true)
+                        TextField("Letra", text: $songData.letterSong, axis: .vertical)
+                            .disabled(isDisabledFields)
                     } else {
                         ZStack{
-                            TextField("Letra", text: .constant(song.letterSong))
+                            TextField("Letra", text: $songData.letterSong)
                                 .autocapitalization(.words)
-                                .disabled(true)
+                                .disabled(isDisabledFields)
                                 .textInputAutocapitalization(.never)
                         }
                     }
+                }
+            }
+        }
+        .alert("Caso você salve as informaçoões serão substituidas, deseja salvar?!", isPresented: $isPresentingSuccessAlert){
+            Button("Salvar", role: .destructive){
+                songDetailViewModel.updateSongById(song: songData) { result in
+                    if result! {
+                        isSaved = true
+                    } else {
+                        isSaved = false
+                    }
+                }
+                isDisabledFields = true
+                isPresentingSuccessAlert = false
+            }
+            Button("Cancelar", role: .cancel) { }
+            
+        }
+        .navigationTitle("Detalhes")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing){
+                 isDisabledFields  ?
+                Button{
+                    isDisabledFields = false
+                } label: {
+                    Image(systemName: "pencil")
+                } :
+                Button{
+                    isPresentingSuccessAlert = true
+                } label: {
+                    Image(systemName: "checkmark")
                 }
             }
         }
@@ -42,6 +83,6 @@ struct SongView: View {
 
 struct SongView_Previews: PreviewProvider {
     static var previews: some View {
-        SongView(song: PlaylistModel.Song(id: "123", title: "Música", rhythm: "Lenta", letterSong: "musica de teste vamos tocar essa musica de teste" ))
+        SongView(songData: PlaylistModel.Song(id: "123", title: "Música", rhythm: "Lenta", letterSong: "musica de teste vamos tocar essa musica de teste" ))
     }
 }

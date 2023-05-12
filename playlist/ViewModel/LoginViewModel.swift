@@ -21,7 +21,6 @@ class LoginViewModel: ObservableObject {
                 AppManager.Authenticated.send(true)
                 completion(true)
             case .failure(let error):
-                print("ASDAOISDHJOAISHD")
                 print("Error: \(error.localizedDescription)")
                 completion(false)
             }

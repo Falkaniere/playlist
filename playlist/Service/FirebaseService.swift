@@ -75,6 +75,26 @@ final class FirebaseService {
             }
         }
     }
+    
+    func updateSong(updatedSong: PlaylistModel.Song, completion: @escaping (Result<Bool, Error>) -> Void) {
+        let db = Firestore.firestore()
+        let documentRef = db.collection("songs").document(updatedSong.id)
+        let dictionaryEncoder = DictionaryEncoderSong()
+        do {
+            let songDictionary = try dictionaryEncoder.encode(updatedSong)
+            documentRef.setData(songDictionary, merge: true) { error in
+                if let error = error {
+                    completion(.failure(error))
+                    print("Error updating document: \(error)")
+                } else {
+                    print("Document updated successfully.")
+                    completion(.success(true))
+                }
+            }
+        }catch {
+            print("Cannot be possible convert to a dictionary")
+        }
+    }
 }
 
 enum FirebaseError: Error {

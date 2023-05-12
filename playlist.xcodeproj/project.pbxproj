@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		650378D2298ADA6E0065B3CD /* RegisterSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650378D1298ADA6E0065B3CD /* RegisterSong.swift */; };
 		6506C52429E62AF000CC560A /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506C52329E62AF000CC560A /* SplashScreenView.swift */; };
+		654282982A0E8AD7000E1C36 /* DictionaryEncoderSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654282972A0E8AD7000E1C36 /* DictionaryEncoderSong.swift */; };
 		65488798297F3EEF00B8D157 /* playlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65488797297F3EEF00B8D157 /* playlistApp.swift */; };
 		6548879A297F3EEF00B8D157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65488799297F3EEF00B8D157 /* ContentView.swift */; };
 		6548879C297F3EEF00B8D157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6548879B297F3EEF00B8D157 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		65B6118429884AA900342EF1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 65B6118329884AA900342EF1 /* FirebaseFirestore */; };
 		65B6118629884AA900342EF1 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 65B6118529884AA900342EF1 /* FirebaseFirestoreCombine-Community */; };
 		65B6118829884AA900342EF1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65B6118729884AA900342EF1 /* FirebaseFirestoreSwift */; };
+		65C9AA752A05A9E100BB3B9E /* SongDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9AA742A05A9E100BB3B9E /* SongDetailViewModel.swift */; };
 		65D4E737298D748D00A6F31C /* RegisterSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E736298D748D00A6F31C /* RegisterSongViewModel.swift */; };
 		65D4E73A298D757F00A6F31C /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E739298D757F00A6F31C /* FirebaseService.swift */; };
 		65D5B65529BD2B4E00AB7DC5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B65429BD2B4E00AB7DC5 /* LoginView.swift */; };
@@ -57,6 +59,7 @@
 /* Begin PBXFileReference section */
 		650378D1298ADA6E0065B3CD /* RegisterSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSong.swift; sourceTree = "<group>"; };
 		6506C52329E62AF000CC560A /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		654282972A0E8AD7000E1C36 /* DictionaryEncoderSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncoderSong.swift; sourceTree = "<group>"; };
 		65488794297F3EEF00B8D157 /* playlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65488797297F3EEF00B8D157 /* playlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistApp.swift; sourceTree = "<group>"; };
 		65488799297F3EEF00B8D157 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		65A7438D29C52C9E008550E0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		65A7438F29C53B37008550E0 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		65B6117C298846D800342EF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65C9AA742A05A9E100BB3B9E /* SongDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewModel.swift; sourceTree = "<group>"; };
 		65D4E736298D748D00A6F31C /* RegisterSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSongViewModel.swift; sourceTree = "<group>"; };
 		65D4E739298D757F00A6F31C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		65D5B65429BD2B4E00AB7DC5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -143,8 +147,17 @@
 				65D4E736298D748D00A6F31C /* RegisterSongViewModel.swift */,
 				65A7438D29C52C9E008550E0 /* LoginViewModel.swift */,
 				65A0954229EF61A400F9177B /* RegisterUserViewModel.swift */,
+				65C9AA742A05A9E100BB3B9E /* SongDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		654282962A0E8AC0000E1C36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				654282972A0E8AD7000E1C36 /* DictionaryEncoderSong.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		6548878B297F3EEF00B8D157 = {
@@ -171,6 +184,7 @@
 		65488796297F3EEF00B8D157 /* playlist */ = {
 			isa = PBXGroup;
 			children = (
+				654282962A0E8AC0000E1C36 /* Utils */,
 				65D4E738298D756300A6F31C /* Service */,
 				6530847D298AD7190008F382 /* ViewModel */,
 				6530847C298AD7140008F382 /* View */,
@@ -366,6 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C9AA752A05A9E100BB3B9E /* SongDetailViewModel.swift in Sources */,
+				654282982A0E8AD7000E1C36 /* DictionaryEncoderSong.swift in Sources */,
 				65D4E737298D748D00A6F31C /* RegisterSongViewModel.swift in Sources */,
 				65783AD529D266C8000D7A5B /* ListView.swift in Sources */,
 				654887C42980643800B8D157 /* PlaylistViewModel.swift in Sources */,

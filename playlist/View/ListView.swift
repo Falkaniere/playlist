@@ -16,7 +16,7 @@ struct ListView: View {
             VStack{
                 List{
                     ForEach(listWithSearch, id: \.id) { song in
-                        NavigationLink(destination: SongView(song: song)){
+                        NavigationLink(destination: SongView(songData: song)){
                             Text(song.title)
                         }
                     }
