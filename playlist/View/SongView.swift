@@ -14,6 +14,8 @@ struct SongView: View {
     @State var isDisabledFields = true
     @State var isPresentingSuccessAlert = false
     @State var isSaved = false
+    @State private var selectedStrength = "Lento"
+    let strengths = ["Lento", "Rápido"]
     
     var song: PlaylistModel.Song {
         songData
@@ -26,11 +28,12 @@ struct SongView: View {
                     TextField("Title", text: $songData.title)
                         .disabled(isDisabledFields)
                 }
-                Section(header: Text("Levada (Ritimo Lenta/Rápida)")) {
-                    TextField("Levada", text: $songData.rhythm)
-                        .autocapitalization(.words)
-                        .disabled(isDisabledFields)
+                Picker("Ritmo", selection: $songData.rhythm) {
+                    ForEach(strengths, id: \.self) {
+                        Text($0)
+                    }
                 }
+                .disabled(isDisabledFields)
                 Section(header: Text("Letra")) {
                     if #available(iOS 16.0, *) {
                         TextField("Letra", text: $songData.letterSong, axis: .vertical)
@@ -46,7 +49,7 @@ struct SongView: View {
                 }
             }
         }
-        .alert("Caso você salve as informaçoões serão substituidas, deseja salvar?!", isPresented: $isPresentingSuccessAlert){
+        .alert("Caso você salve, as informaçoões serão substituidas, deseja salvar?!", isPresented: $isPresentingSuccessAlert){
             Button("Salvar", role: .destructive){
                 songDetailViewModel.updateSongById(song: songData) { result in
                     if result! {
