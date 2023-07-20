@@ -44,7 +44,7 @@ struct RegisterSong: View {
                         }
                     }
                 }
-//                TO BE DONE
+//                TBD
 //                Section(header: Text("Palavras chave")) {
 //                    TextField("Santa Ceia, Dízimo...", text: $keyWord)
 //                }

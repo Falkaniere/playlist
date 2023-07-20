@@ -36,11 +36,11 @@ struct ListView: View {
                         Image(systemName: "plus")
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing){
-                    NavigationLink(destination: RegisterSong()){
-                        Image(systemName: "line.3.horizontal.decrease.circle")
-                    }
-                }
+//                ToolbarItem(placement: .navigationBarTrailing){
+//                    NavigationLink(destination: RegisterSong()){
+//                        Image(systemName: "line.3.horizontal.decrease.circle")
+//                    }
+//                }
             }
             .listStyle(PlainListStyle())
             .searchable(text: $textToSearch, placement: .navigationBarDrawer(displayMode: .always))

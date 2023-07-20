@@ -9,6 +9,7 @@ import Foundation
 
 class SongDetailViewModel {
     private let firebaseService = FirebaseService()
+    let strengths = ["Lento", "Rápido"]
     
     func updateSongById(song: PlaylistModel.Song, completion: @escaping (Bool?) -> Void) {
         FirebaseService().updateSong(updatedSong: song) { result in

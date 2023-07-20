@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650230D72A68B3B800DF5F99 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650230D62A68B3B800DF5F99 /* FilterView.swift */; };
+		650230D92A68B3C600DF5F99 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650230D82A68B3C600DF5F99 /* FilterViewModel.swift */; };
 		650378D2298ADA6E0065B3CD /* RegisterSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650378D1298ADA6E0065B3CD /* RegisterSong.swift */; };
 		6506C52429E62AF000CC560A /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506C52329E62AF000CC560A /* SplashScreenView.swift */; };
 		654282982A0E8AD7000E1C36 /* DictionaryEncoderSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654282972A0E8AD7000E1C36 /* DictionaryEncoderSong.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650230D62A68B3B800DF5F99 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		650230D82A68B3C600DF5F99 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		650378D1298ADA6E0065B3CD /* RegisterSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSong.swift; sourceTree = "<group>"; };
 		6506C52329E62AF000CC560A /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		654282972A0E8AD7000E1C36 /* DictionaryEncoderSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncoderSong.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				65783AD429D266C8000D7A5B /* ListView.swift */,
 				6506C52329E62AF000CC560A /* SplashScreenView.swift */,
 				65A0954029EF59AA00F9177B /* RegisterView.swift */,
+				650230D62A68B3B800DF5F99 /* FilterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				65A7438D29C52C9E008550E0 /* LoginViewModel.swift */,
 				65A0954229EF61A400F9177B /* RegisterUserViewModel.swift */,
 				65C9AA742A05A9E100BB3B9E /* SongDetailViewModel.swift */,
+				650230D82A68B3C600DF5F99 /* FilterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			files = (
 				65C9AA752A05A9E100BB3B9E /* SongDetailViewModel.swift in Sources */,
 				654282982A0E8AD7000E1C36 /* DictionaryEncoderSong.swift in Sources */,
+				650230D92A68B3C600DF5F99 /* FilterViewModel.swift in Sources */,
 				65D4E737298D748D00A6F31C /* RegisterSongViewModel.swift in Sources */,
 				65783AD529D266C8000D7A5B /* ListView.swift in Sources */,
 				654887C42980643800B8D157 /* PlaylistViewModel.swift in Sources */,
@@ -396,6 +403,7 @@
 				65D5B65529BD2B4E00AB7DC5 /* LoginView.swift in Sources */,
 				65A7439029C53B37008550E0 /* userModel.swift in Sources */,
 				6548879A297F3EEF00B8D157 /* ContentView.swift in Sources */,
+				650230D72A68B3B800DF5F99 /* FilterView.swift in Sources */,
 				65A7438E29C52C9E008550E0 /* LoginViewModel.swift in Sources */,
 				65488798297F3EEF00B8D157 /* playlistApp.swift in Sources */,
 			);

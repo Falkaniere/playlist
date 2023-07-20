@@ -86,48 +86,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2E931869-0212-46EE-98D9-538DB5C94022"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "playlist/ViewModel/SongDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "updateSongById(song:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2E931869-0212-46EE-98D9-538DB5C94022 - 1a84477d14606604"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "playlist.SongDetailViewModel.updateSongById(song: playlist.PlaylistModel.Song, completion: (Swift.Optional&lt;Swift.Bool&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "playlist"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/SongDetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "2E931869-0212-46EE-98D9-538DB5C94022 - b8d495641cdf4b82"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; () in playlist.SongDetailViewModel.updateSongById(song: playlist.PlaylistModel.Song, completion: (Swift.Optional&lt;Swift.Bool&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "playlist"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/SongDetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -182,14 +150,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C71C4B04-93C3-41AE-BA51-0068FA7B6F71"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "playlist/ViewModel/SongDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "updateSongById(song:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -198,6 +166,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4380DBCE-BB5C-467C-9332-67CBA8767076"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/SongDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "updateSongById(song:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8A179C1-CC0A-4A5E-BE78-0989DAA5D833"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -213,31 +197,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C8A179C1-CC0A-4A5E-BE78-0989DAA5D833"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "playlist/ViewModel/SongDetailViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "updateSongById(song:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "8F16E9B3-8BA7-492A-A84E-163F89B78B91"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "playlist/ViewModel/SongDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "updateSongById(song:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -792,6 +760,130 @@
                   offsetFromSymbolStart = "112">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/View/SongView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "SongView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5 - 236bf8f229ac5968"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of playlist.SongView.isDisabledFields : Swift.Bool"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/SongView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5 - 80fa06346afb9342"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.SongView.isDisabledFields.getter : Swift.Bool"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/SongView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5 - 30bbd990d0c8bbbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.SongView.isDisabledFields.setter : Swift.Bool"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/SongView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5 - 840261744d5bb541"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.SongView.isDisabledFields.modify : Swift.Bool"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/SongView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5 - 20169749ae1685be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.SongView.isDisabledFields.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/SongView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "BC7181D0-3B38-44B8-9C3E-C9A3E5676AB5 - c6e043e366652686"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.SongView.$isDisabledFields.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/View/SongView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE4FC027-F11F-495A-B51D-824F27F9D1E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/SongDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "updateSongById(song:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

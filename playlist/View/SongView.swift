@@ -15,7 +15,6 @@ struct SongView: View {
     @State var isPresentingSuccessAlert = false
     @State var isSaved = false
     @State private var selectedStrength = "Lento"
-    let strengths = ["Lento", "Rápido"]
     
     var song: PlaylistModel.Song {
         songData
@@ -29,7 +28,7 @@ struct SongView: View {
                         .disabled(isDisabledFields)
                 }
                 Picker("Ritmo", selection: $songData.rhythm) {
-                    ForEach(strengths, id: \.self) {
+                    ForEach(songDetailViewModel.strengths, id: \.self) {
                         Text($0)
                     }
                 }
