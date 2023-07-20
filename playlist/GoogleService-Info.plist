@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>557681869551-t33o95ipdrsnusml2bqvil1tnfjr1eag.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.557681869551-t33o95ipdrsnusml2bqvil1tnfjr1eag</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDScuxiEeKYKdTAanwN4ihPaPY3_F22SQQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>557681869551</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jonatas.listSong</string>
+	<key>PROJECT_ID</key>
+	<string>churchsongs-b5c23</string>
+	<key>STORAGE_BUCKET</key>
+	<string>churchsongs-b5c23.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:557681869551:ios:23028a51b551dab70b911a</string>
+	<key>DATABASE_URL</key>
+	<string>https://churchsongs-b5c23-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

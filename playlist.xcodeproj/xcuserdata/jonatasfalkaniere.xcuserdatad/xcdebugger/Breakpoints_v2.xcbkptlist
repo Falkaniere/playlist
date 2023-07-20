@@ -150,7 +150,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8456185F-A439-4072-BD47-055C7EC8FA70"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "playlist/ViewModel/RegisterSongViewModel.swift"
@@ -166,7 +166,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3651C573-D2F7-438D-938C-3B6EB2FFF2EE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "playlist/ViewModel/RegisterSongViewModel.swift"
@@ -382,6 +382,414 @@
                   startingLineNumber = "92"
                   endingLineNumber = "92"
                   offsetFromSymbolStart = "868">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "179441F4-EBCC-4E1D-BBE9-F6E2D1D77868"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getAllSongs()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "179441F4-EBCC-4E1D-BBE9-F6E2D1D77868 - 481b9bd7c5cc504f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "179441F4-EBCC-4E1D-BBE9-F6E2D1D77868 - 481b9bd7c5cc504f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6990A08-9350-43DF-BCB4-FC28E627300C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getAllSongs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C662DEFF-D67D-445D-9330-6152733D06BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getAllSongs()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C662DEFF-D67D-445D-9330-6152733D06BA - 481b9bd7c5cc51a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "C662DEFF-D67D-445D-9330-6152733D06BA - a1450cb095b78326"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;playlist.PlaylistModel.Song&gt; in closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2490939A-7A6A-4192-B47B-CDB9E87A834B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getAllSongs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56F87456-9A29-49F0-B3B8-1BA63D9EB531"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getAllSongs()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56F87456-9A29-49F0-B3B8-1BA63D9EB531 - a1450cb095b782aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;playlist.PlaylistModel.Song&gt; in closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1284">
+               </Location>
+               <Location
+                  uuid = "56F87456-9A29-49F0-B3B8-1BA63D9EB531 - a1450cb095b782aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;playlist.PlaylistModel.Song&gt; in closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BAB6684-AE7E-4D18-8282-BD140D23DF2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getAllSongs()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9BAB6684-AE7E-4D18-8282-BD140D23DF2E - a1450cb095b7834b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;playlist.PlaylistModel.Song&gt; in closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  uuid = "9BAB6684-AE7E-4D18-8282-BD140D23DF2E - a1450cb095b7834b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;playlist.PlaylistModel.Song&gt; in closure #1 (Swift.Result&lt;Swift.Array&lt;__C.FIRQueryDocumentSnapshot&gt;, Swift.Error&gt;) -&gt; () in playlist.PlaylistViewModel.getAllSongs() -&gt; ()"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1028">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F837EACE-1ED5-4587-AA85-1037BB489066"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PlaylistViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "playlist/ViewModel/PlaylistViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "PlaylistViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - abea9092090806c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of playlist.PlaylistViewModel.listOfSongs : Swift.Array&lt;playlist.PlaylistModel.Song&gt;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - 90fb311c74f48cda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.listOfSongs.getter : Swift.Array&lt;playlist.PlaylistModel.Song&gt;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - 2c733751741b4cce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.listOfSongs.setter : Swift.Array&lt;playlist.PlaylistModel.Song&gt;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - f0a0a093010b0cdf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.listOfSongs.modify : Swift.Array&lt;playlist.PlaylistModel.Song&gt;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - 9e7d63ce1a069dbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.listOfSongs.modify : Swift.Array&lt;playlist.PlaylistModel.Song&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - e60cc54dda095caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.$listOfSongs.getter : Combine.Published&lt;Swift.Array&lt;playlist.PlaylistModel.Song&gt;&gt;.Publisher"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - e60cc54dda095caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.$listOfSongs.setter : Combine.Published&lt;Swift.Array&lt;playlist.PlaylistModel.Song&gt;&gt;.Publisher"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - aec0f3ea6173f7a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.$listOfSongs.modify : Combine.Published&lt;Swift.Array&lt;playlist.PlaylistModel.Song&gt;&gt;.Publisher"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - 8b6c4f5b14aab80f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.$listOfSongs.modify : Combine.Published&lt;Swift.Array&lt;playlist.PlaylistModel.Song&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "3EC5B3A3-6722-4D21-8A14-8F0632022E45 - 7536c364a5f3a9cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "playlist.PlaylistViewModel.init() -&gt; playlist.PlaylistViewModel"
+                  moduleName = "playlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonatasfalkaniere/ios/playlist/playlist/ViewModel/PlaylistViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
                </Location>
             </Locations>
          </BreakpointContent>
