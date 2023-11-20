@@ -10,20 +10,24 @@ import SwiftUI
 
 class PlaylistViewModel: ObservableObject {
 
-    let firebaseService = FirebaseService()
-    @Published var listOfSongs = [PlaylistModel.Song]()
+    private let firebaseService = FirebaseService()
     
+    @Published var listOfSongs: [PlaylistModel.Song] = []
+
     func getAllSongs() {
-        firebaseService.getAllSongs() { result in
+        firebaseService.getAllSongs { [weak self] result in
             switch result {
             case .success(let documents):
-                self.listOfSongs = documents.compactMap { (queryDocumentSnapshot) -> PlaylistModel.Song? in
-                    let data = queryDocumentSnapshot.data()
-                    let id = data["id"] as? String ?? ""
-                    let title = data["title"] as? String ?? ""
-                    let rhythm = data["rhythm"] as? String ?? ""
-                    let letterSong = data["letterSong"] as? String ?? ""
-                    return PlaylistModel.Song(id: id, title: title, rhythm: rhythm, letterSong: letterSong)
+                self?.listOfSongs = documents.compactMap { queryDocumentSnapshot in
+                    do {
+                        let data = try JSONSerialization.data(withJSONObject: queryDocumentSnapshot.data())
+                        let decoder = JSONDecoder()
+                        let song = try decoder.decode(PlaylistModel.Song.self, from: data)
+                        return song
+                    } catch {
+                        print("Error decoding song: \(error)")
+                        return nil
+                    }
                 }
             case .failure(let error):
                 print("Error getting documents: \(error)")
@@ -31,8 +35,8 @@ class PlaylistViewModel: ObservableObject {
         }
     }
     
-    func deleteSongByID(at offsets: IndexSet) -> Void {
-        for index in offsets.makeIterator() {
+    func deleteSongByID(at offsets: IndexSet) {
+        for index in offsets {
             let theItem = listOfSongs[index]
             firebaseService.deleteSongByID(id: theItem.id)
         }
